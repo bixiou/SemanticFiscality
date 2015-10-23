@@ -1,0 +1,33 @@
+Types of subjects :
+    person
+    idea
+    data
+
+Predicates :
+    is_a Associated objects :
+        principle
+        proposition
+        law
+        fact
+        opinion
+        hypothesis
+        summary
+        argument
+        problem
+        solution
+        group (social group or institution)
+
+    has_a (problem e.g.)
+    is_in
+    implies
+    is_incomp(atible_with)
+    
+    is_created_by
+    is_backed_by (argument or person)
+    is_opposed_by (argument or person)
+    holds_in (space or time)
+
+    costs
+
+Inferred predicates :
+    modifies (a proposition (implies an idea which) is incompatible with a real idea (law or fact) - the modified one)
