@@ -75,7 +75,7 @@
 :has_a a owl:ObjectProperty ;
     rdfs:label "a un"@fr ;
   	rdfs:domain :Idea ;
-    rdfs:range [owl:unionOf(:hypothesis :effect :summary :argument :problem :solution)] .
+    rdfs:range [owl:UnionOf(:hypothesis :effect :summary :argument :problem :solution)] .
 
 :is_in a owl:ObjectProperty ;
     rdfs:label "est inclus dans"@fr .
@@ -83,7 +83,7 @@
 :implies a owl:ObjectProperty ;
     rdfs:label "implique"@fr ;
     rdfs:domain :Idea ;
-    rdfs:range [owl:unionOf(:problem :opinion :effect :proposition)] .
+    rdfs:range [owl:UnionOf(:problem :opinion :effect :proposition)] .
 
 :is_incomp a owl:ObjectProperty ;
     rdfs:label "est incompatible avec"@fr ;
@@ -93,26 +93,26 @@
 :is_created_by a owl:ObjectProperty ;
     rdfs:label "est créé par"@fr ;
     rdfs:domain :Idea ;
-    rdfs:range [owl:unionOf(:Person :Group)] .
+    rdfs:range [owl:UnionOf(:Person :Group)] .
 
 :is_backed_by a owl:ObjectProperty ;
     rdfs:label "est soutenu par"@fr ;
     rdfs:domain :Idea ;
-    rdfs:range [owl:unionOf(:Person :argument :principle :Data)] .
+    rdfs:range [owl:UnionOf(:Person :argument :principle :Data)] .
 
 :is_opposed_by a owl:ObjectProperty ;
     rdfs:label "est contesté par"@fr ;
     rdfs:domain :Idea ;
-    rdfs:range [owl:unionOf(:Person :argument :principle :Data)] .
+    rdfs:range [owl:UnionOf(:Person :argument :principle :Data)] .
 
 :holds_in a owl:ObjectProperty ;
     rdfs:label "est valable pour"@fr ;
-    rdfs:domain [owl:unionOf(:proposition :law :fact :effect :cost)] ;
-    rdfs:range [owl:unionOf(:Space :TimeInterval)] .
+    rdfs:domain [owl:UnionOf(:proposition :law :fact :effect :cost)] ;
+    rdfs:range [owl:UnionOf(:Space :TimeInterval)] .
 
 :has_cost a owl:ObjectProperty ;
     rdfs:label "a pour coût"@fr ;
-    rdfs:domain [owl:unionOf(:proposition :law :fact :effect :solution)] ;
+    rdfs:domain [owl:UnionOf(:proposition :law :fact :effect :solution)] ;
     rdfs:range :cost .
 
 :value a owl:ObjectProperty ;
@@ -128,9 +128,9 @@
 :bears_on a owl:ObjectProperty ;
     rdfs:label "porte sur"@fr ;
     rdfs:domain :cost ;
-    rdfs:range [owl:unionOf(:Person :Group)] .
+    rdfs:range [owl:UnionOf(:Person :Group)] .
 
 :source a owl:ObjectProperty ;
     rdfs:label "a pour source"@fr ;
-    rdfs:domain [owl:unionOf(:Idea :Data)] ;
+    rdfs:domain [owl:UnionOf(:Idea :Data)] ;
     rdfs:range xsd:anyURI .
